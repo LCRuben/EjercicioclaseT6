@@ -9,15 +9,8 @@ package ejercicio9_t6;
  *
  * @author ruben
  */
-public class Ejercicio9_T6 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-        
-        
-    }
+public class RangoException extends Exception
+{
+ 
     
 }
