@@ -16,6 +16,7 @@ public class Ejercicio9_T6 {
      */
     public static void main(String[] args) {
         
+        Alumno n1 = new Alumno();
         
         
     }
