@@ -11,7 +11,10 @@ package ejercicio9_t6;
  */
 public class RangoException extends Exception
 {
- 
+    /**
+     * 
+     * @param mensaje 
+     */
      public RangoException(String mensaje)
     {
         super(mensaje);

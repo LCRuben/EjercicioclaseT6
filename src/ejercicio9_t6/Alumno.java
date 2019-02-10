@@ -20,6 +20,9 @@ public class Alumno
     
     private ArrayList<Double> notas;
     
+    /**
+     * Constructor por Defecto.
+     */
     public Alumno()
     {
         notas = new ArrayList<>(num_asignaturas);
@@ -27,11 +30,19 @@ public class Alumno
         num_asignaturas = 5;
     }
     
+    /**
+     * 
+     * @param nombre 
+     */
     public Alumno(String nombre)
     {
         this.nombre = nombre;
     }
 
+    /**
+     * Metodos Get y Set.
+     * @return 
+     */
     public String getNombre() 
     {
         return nombre;
@@ -41,6 +52,10 @@ public class Alumno
         this.nombre = nombre;
     }
     
+    /**
+     * Metodo para introducir las calificaciones de los Alumnos.
+     * @throws RangoException 
+     */
     public void pedirNotas() throws RangoException
     {
         Scanner teclado_d = new Scanner(System.in);
@@ -61,6 +76,13 @@ public class Alumno
         }
     }
     
+    /**
+     * Metodo para modificar las calificaciones de los Alumnos.
+     * @param posicion
+     * @param nnota
+     * @throws RangoException
+     * @throws IndexOutOfBoundsException 
+     */
     public void modificarNota(int posicion, double nnota) throws RangoException, IndexOutOfBoundsException
     {   
         if(nnota < 0 || nnota > 10)
@@ -73,6 +95,10 @@ public class Alumno
         }
     }
     
+    /**
+     * Metodo para Mostrar las Calificaiones de cada Alumno.
+     * No devuelve nada.
+     */
     public void imprimirCalificaciones()
     {
         System.out.println("El Alumno: " + getNombre() + " ha Obtenido las siguientes notas: ");
